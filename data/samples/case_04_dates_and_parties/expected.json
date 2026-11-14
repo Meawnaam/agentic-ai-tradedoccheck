@@ -1,0 +1,8 @@
+{
+  "expected_codes": [
+    "DATE_ORDER",
+    "NW_GT_GW",
+    "PARTY_CONSIGNEE",
+    "PKG_MISMATCH"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "expected_codes": [
+    "GW_MISMATCH",
+    "INV_ARITHMETIC",
+    "INV_TOTAL",
+    "PARTY_SHIPPER",
+    "QTY_MISMATCH"
+  ]
+}
