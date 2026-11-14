@@ -25,14 +25,15 @@ makes the final call in the UI.
 
 ```mermaid
 flowchart LR
-    I[ingest] --> C[classify] --> E[extract]
-    E -->|fields missing + LLM on| R[llm_repair]
-    E -->|complete| V[validate]
-    R --> V --> D[decide]
-    D -->|AUTO_PASS| P[report]
-    D -->|REVIEW / HOLD| X[investigate<br/>LLM picks tools]
+    I["ingest"] --> C["classify"] --> E["extract"]
+    E -->|"fields missing and LLM on"| R["llm_repair"]
+    E -->|"complete"| V["validate"]
+    R --> V
+    V --> D["decide"]
+    D -->|"AUTO_PASS"| P["report"]
+    D -->|"REVIEW or HOLD"| X["investigate - LLM picks tools"]
     X --> P
-    P --> H[human review in UI]
+    P --> H["human review in UI"]
 ```
 
 | Agent / node | Job | How |
